@@ -29,7 +29,7 @@ body {
   opacity: 0.5;
 }
 
-.navbar #nav-dropdown:hover{
+.navbar #nav-dropdown:hover {
   color: white;
   opacity: 1;
 }
@@ -69,7 +69,8 @@ body {
 }
 
 .intro {
-  background-color: white;/*#39ACD6;*/
+  background-color: white;
+  /*#39ACD6;*/
   padding: 25vh 2rem 5rem 2rem;
   height: 100vh;
   min-height: 37rem;
@@ -95,7 +96,7 @@ body {
   left: 2%;
 }
 
-#hotair-2{
+#hotair-2 {
   width: 10%;
   top: 1rem;
   left: 85%;
@@ -122,19 +123,19 @@ body {
 
 .intro #mail {
   top: 15%;
-  right:17%;
+  right: 17%;
   padding: 0.5% 0.5%;
 }
 
 .intro #github {
   top: 40%;
-  right:14%;
+  right: 14%;
   padding: 0.5% 0.5%;
 }
 
 .intro #linkedin {
   top: 65%;
-  right:17%;
+  right: 17%;
 }
 
 .contact-info #mail {
@@ -154,7 +155,8 @@ body {
 
 .experience {
   position: relative;
-  background-color: #61C9A8;/*#4EBF66;*/
+  background-color: #61C9A8;
+  /*#4EBF66;*/
   text-align: center;
   padding: 0 2rem 2rem 2rem;
 }
@@ -202,10 +204,24 @@ body {
   margin: 1rem 2rem 1rem 2rem;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.carousel-indicators {
+  margin: auto;
+  padding: 0.5rem;
+  width: 150px;
+  background-color: black;
+}
+
 .project-img {
+  margin: auto;
   width: 80%;
   max-width: 50rem;
-  border:0.075rem solid black;
+  border: 0.075rem solid black;
   margin-bottom: 2rem;
 }
 
@@ -223,7 +239,7 @@ hr {
   background-color: white;
   width: auto;
   height: 90%;
-  border:0.1rem solid black;
+  border: 0.1rem solid black;
   padding-bottom: 8rem;
   box-shadow: 0 1rem 1.5rem 0 rgba(0, 0, 0, 0.3), 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.20);
 }
@@ -325,12 +341,10 @@ footer {
   .container h1 {
     font-size: 2rem;
   }
-
   .job-info {
     margin: 1rem 1rem 1rem 1rem;
   }
-
-  .hotair{
+  .hotair {
     display: none;
   }
 }
@@ -351,4 +365,5 @@ footer {
     left: 120%;
   }
   */
+
 }

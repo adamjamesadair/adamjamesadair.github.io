@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  --sidebar-width: 20%;
+  --sidebar-width: 15rem;
   --experience-color: #61C9A8;
   --project-color: tomato;
 }
@@ -9,16 +9,23 @@ body {
   background-color: white;
   font-family: Arial, serif;
   font-size: 1.25rem;
+  font-weight: normal;
 }
 
 .sidebar {
   position: fixed;
   height: 100%;
+  min-height: 700px;
   width: var(--sidebar-width);
+  max-width: 280px;
   background: black;
   color: white;
   text-align: center;
   z-index: 2;
+}
+
+.fas, .fab {
+  font-size: 3rem;
 }
 
 .sidebar ul {
@@ -29,24 +36,32 @@ body {
 
 .sidebar h1 {
   margin-top: 1rem;
-  font-size: 3vw;
+  font-size: 2.5rem;
 }
 
-.sidebar a {
+.sidebar p {
+  font-size: 1.2rem;
+}
+
+.sidebar li a {
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 1.25rem;
   color: silver;
   opacity: 1;
   display: block;
   transition: 0.3s;
 }
 
-.sidebar a:hover {
+.sidebar li a:hover {
+  color: black;
+}
+
+li.active a {
   color: black;
 }
 
 .sidebar-intro {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 #me {
@@ -57,12 +72,30 @@ body {
   box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5), 0 1rem 1rem 0 rgba(0, 0, 0, 0.20);
 }
 
+.contact-info {
+  margin-top: 1rem;
+}
+
+.icon {
+  display: inline-block;
+  color: silver;
+  padding: 0 5%;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+}
+
 .navigation {
   margin-top: 5rem;
 }
 
 .navigation li {
-  padding: 0.25vw;
+  padding: 0.25rem;
   margin: auto;
   margin-top: -1px;
   border-top: 1px solid white;
@@ -70,12 +103,8 @@ body {
   transition: 0.3s;
 }
 
-.active a {
-  color: black;
-}
-
 #nav-home {
-  border-left: 1vw solid white;
+  border-left: 0.75rem solid white;
 }
 
 #nav-home:hover, #nav-home.active {
@@ -83,7 +112,7 @@ body {
 }
 
 #nav-experience {
-  border-left: 1vw solid var(--experience-color);
+  border-left: 0.75rem solid var(--experience-color);
 }
 
 #nav-experience:hover, #nav-experience.active {
@@ -91,7 +120,7 @@ body {
 }
 
 #nav-projects {
-  border-left: 1vw solid var(--project-color);
+  border-left: 0.75rem solid var(--project-color);
 }
 
 #nav-projects:hover, #nav-projects.active {
@@ -122,7 +151,7 @@ body {
 .intro {
   background-color: white;
   /*#39ACD6;*/
-  padding: 25vh 2rem 5rem 2rem;
+  padding: 35vh 2rem 5rem 2rem;
   margin-left: var(--sidebar-width);
   height: 100vh;
   min-height: 37rem;

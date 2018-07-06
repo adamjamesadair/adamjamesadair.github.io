@@ -13,18 +13,17 @@
 </head>
 
 <body>
-
   <!-- Side navigation -->
-  <div class="sidenav">
-    <div class="title">
+  <div class="sidebar">
+    <div class="sidebar-intro">
       <img id="me" src="./img/me.jpg" alt="Picture of me" />
       <h1>Adam Adair</h1>
     </div>
     <div class="navigation">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#experience-anchor">Experience</a></li>
-        <li><a href="#projects-anchor">Projects</a></li>
+        <li class="nav-link active" id="nav-home"><a href="#">Home</a></li>
+        <li class="nav-link" id="nav-experience"><a href="#experience-anchor">Experience</a></li>
+        <li class="nav-link" id="nav-projects"><a href="#projects-anchor">Projects</a></li>
       </ul>
     </div>
     <div class=sidebar-footer>
@@ -35,7 +34,7 @@
     </div>
   </div>
   <!-- Introduction -->
-  <div class="intro">
+  <div id='home' class="intro">
     <h1>Hi, I'm Adam!</h1>
     <p>I'm a fourth year computer science student at Ryerson University.</p>
   </div>
@@ -92,7 +91,7 @@
     </div>
   </div>
   <!-- Projects -->
-  <div class="projects">
+  <div id='projects' class="projects">
     <a id="projects-anchor" class="projects-anchor"></a>
     <h1>Projects</h1>
     <hr/>

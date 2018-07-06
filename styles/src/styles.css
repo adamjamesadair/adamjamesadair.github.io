@@ -1,6 +1,8 @@
 :root {
   font-size: 16px;
   --sidebar-width: 20%;
+  --experience-color: #61C9A8;
+  --project-color: tomato;
 }
 
 body {
@@ -9,7 +11,7 @@ body {
   font-size: 1.25rem;
 }
 
-.sidenav {
+.sidebar {
   position: fixed;
   height: 100%;
   width: var(--sidebar-width);
@@ -19,33 +21,31 @@ body {
   z-index: 2;
 }
 
-.sidenav ul {
+.sidebar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.sidenav h1 {
+.sidebar h1 {
   margin-top: 1rem;
   font-size: 3vw;
 }
 
-.sidenav a {
-  line-height: 1.5rem;
-  padding: 1.5rem 0rem 0.5rem 0rem;
+.sidebar a {
   text-decoration: none;
   font-size: 2vw;
-  color: #cccccc;
+  color: silver;
   opacity: 1;
   display: block;
   transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: white;
+.sidebar a:hover {
+  color: black;
 }
 
-.title {
+.sidebar-intro {
   margin-top: 1rem;
 }
 
@@ -55,6 +55,47 @@ body {
   max-width: 200px;
   margin: auto;
   box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5), 0 1rem 1rem 0 rgba(0, 0, 0, 0.20);
+}
+
+.navigation {
+  margin-top: 5rem;
+}
+
+.navigation li {
+  padding: 0.25vw;
+  margin: auto;
+  margin-top: -1px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 0.3s;
+}
+
+.active a {
+  color: black;
+}
+
+#nav-home {
+  border-left: 1vw solid white;
+}
+
+#nav-home:hover, #nav-home.active {
+  background: white;
+}
+
+#nav-experience {
+  border-left: 1vw solid var(--experience-color);
+}
+
+#nav-experience:hover, #nav-experience.active {
+  background: var(--experience-color);
+}
+
+#nav-projects {
+  border-left: 1vw solid var(--project-color);
+}
+
+#nav-projects:hover, #nav-projects.active {
+  background: var(--project-color);
 }
 
 .icon {
@@ -99,7 +140,7 @@ body {
 .experience {
   position: relative;
   margin-left: var(--sidebar-width);
-  background-color: #61C9A8;
+  background-color: var(--experience-color);
   /*#4EBF66;*/
   text-align: center;
   padding: 0 2rem 2rem 2rem;
@@ -123,7 +164,7 @@ body {
 .projects {
   position: relative;
   margin-left: var(--sidebar-width);
-  background-color: tomato;
+  background-color: var(--project-color);
   text-align: center;
   padding: 0 2rem 2rem 2rem;
 }

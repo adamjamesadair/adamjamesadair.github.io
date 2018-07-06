@@ -4,8 +4,9 @@
 <meta name="description" content="Adam Adair's portfolio. Computer science student at Ryerson University." />
 
 <head>
-  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/styles.css?version1">
+  <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/src/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/lib/fontawesome/css/fontawesome-all.min.css">
   <script src="scripts/lib/jquery-3.3.1.min.js"></script>
   <script src="scripts/lib/bootstrap.min.js"></script>
   <title>Adam Adair</title>
@@ -13,31 +14,28 @@
 
 <body>
 
-  <!-- Top navigation -->
-  <nav class="navbar fixed-top">
-    <span id="nav-dropdown" onclick="toggleSideNav()">&#9776;</span>
-    <h1>Adam Adair</h1>
-  </nav>
-
   <!-- Side navigation -->
-  <div class="sidenav" onmouseleave="closeSideNav()">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#experience-anchor">Experience</a></li>
-      <li><a href="#projects-anchor">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <div class="sidenav">
+    <div class="title">
+      <img id="me" src="./img/me.jpg" alt="Picture of me" />
+      <h1>Adam Adair</h1>
+    </div>
+    <div class="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#experience-anchor">Experience</a></li>
+        <li><a href="#projects-anchor">Projects</a></li>
+      </ul>
+    </div>
+    <div class=sidebar-footer>
+      <span class="icon"><i class="fas fa-envelope-square fa-2x"></i></span>
+      <span class="icon"><i class="fab fa-github fa-2x"></i></span>
+      <span class="icon"><i class="fab fa-linkedin fa-2x"></i></i></span>
+      <span><p class="copyright"><small>&copy; 2017-2018 Adam Adair</small></p></span>
+    </div>
   </div>
-
   <!-- Introduction -->
   <div class="intro">
-    <div class="intro-img">
-      <img id="me" src="./img/me.jpg" alt="Picture of me" />
-      <a href="mailto:adam.james.adair@gmail.com?Subject=From%20Portfoilo" target="_top"><img id="mail" class="icon" src="./img/mail.svg" alt="email icon"/></a>
-      <a target="_blank" href="https://github.com/adamjamesadair"><img id="github" class="icon" src="./img/github.svg" alt="github icon"/></a>
-      <a target="_blank" href="https://www.linkedin.com/in/adam-adair-431749131/"><img id="linkedin" class="icon" src="./img/linkedin.svg" alt="linekdin icon"/></a>
-    </div>
-
     <h1>Hi, I'm Adam!</h1>
     <p>I'm a fourth year computer science student at Ryerson University.</p>
   </div>
@@ -48,7 +46,7 @@
     <h1>Work Experience</h1>
     <hr/>
     <div class="row">
-      <div class="col-lg-6 box">
+      <div class="col-xl-6 box">
         <div class="container">
           <a href="http://www.jp.honda-ri.com/english/" target="_blank"><img id="honda" class="logo" src="img/Honda.svg" alt="Honda Logo"/></a>
           <h1>Honda Research Institute Japan</h1>
@@ -70,7 +68,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 box">
+      <div class="col-xl-6 box">
         <div class="container">
           <a href="https://www.cibc.com/en/about-cibc.html" target="_blank"><img id="cibc" class="logo" src="img/cibc.svg" alt="CIBC Logo"/></a>
           <h1>Canadian Imperial Bank of Commerce</h1>
@@ -99,7 +97,7 @@
     <h1>Projects</h1>
     <hr/>
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-xl-6">
         <div class="container">
           <div class="tab-manager">
             <img id="tab-manager-icon" class="tab-manager-icon project-icon" src="img/icon.svg" alt="Tab manager icon" />
@@ -138,7 +136,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-xl-6">
         <div class="container">
           <div class="sudoku-generator">
             <img id="sudoku-generator-icon" class="sudoku-generator-icon project-icon" src="img/sudoku-generator/sudoku-logo.png" alt="Sudoku Generator icon" />
@@ -177,18 +175,8 @@
         </div>
       </div>
     </div>
-
   </div>
 
-  <!-- Contact Info -->
-  <div id="contact" class="contact-info">
-    <a href="mailto:adam.james.adair@gmail.com?Subject=From%20Portfoilo" target="_top"><img id="mail" class="icon" src="./img/mail.svg"/></a>
-    <a target="_blank" href="https://github.com/adamjamesadair"><img id="github" class="icon" src="./img/github.svg"/></a>
-    <a target="_blank" href="https://www.linkedin.com/in/adam-adair-431749131/"><img id="linkedin" class="icon" src="./img/linkedin.svg"/></a>
-  </div>
-  <footer>
-    <span class="copyright"><p><small>&copy; 2017-2018 Adam Adair</small></p></span>
-  </footer>
 
 
   <script src="./scripts/script.js"></script>

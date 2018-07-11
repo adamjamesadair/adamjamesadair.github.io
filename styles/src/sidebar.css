@@ -1,0 +1,109 @@
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  width: var(--sidebar-width);
+  max-width: 280px;
+  background: black;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar h1 {
+  margin-top: 1.5vh;
+  font-size: 2.5rem;
+}
+
+.sidebar p {
+  font-size: 1.2rem;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: silver;
+  opacity: 1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar li a:hover {
+  color: black;
+}
+
+li.active a {
+  color: black;
+}
+
+.sidebar-intro {
+  margin-top: 3vh;
+}
+
+#me {
+  border-radius: 100%;
+  width: 85%;
+  max-width: 200px;
+  margin: auto;
+  box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5), 0 1rem 1rem 0 rgba(0, 0, 0, 0.20);
+}
+
+.navigation {
+  margin-top: 7vh;
+}
+
+.navigation li {
+  padding: 0.25rem;
+  margin: auto;
+  margin-top: -1px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 0.3s;
+}
+
+#nav-home {
+  border-left: 0.75rem solid var(--home-color);
+}
+
+#nav-home:hover, #nav-home.active {
+  background: var(--home-color);
+}
+
+#nav-experience {
+  border-left: 0.75rem solid var(--experience-color);
+}
+
+#nav-experience:hover, #nav-experience.active {
+  background: var(--experience-color);
+}
+
+#nav-projects {
+  border-left: 0.75rem solid var(--project-color);
+}
+
+#nav-projects:hover, #nav-projects.active {
+  background: var(--project-color);
+}
+
+#nav-contact {
+  border-left: 0.75rem solid var(--contact-color);
+}
+
+#nav-contact:hover, #nav-contact.active {
+  background: var(--contact-color);
+}
+
+.copyright {
+  margin-top: 1vh;
+}
+
+.sidebar-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

@@ -4,53 +4,82 @@
 <meta name="description" content="Adam Adair's portfolio. Computer science student at Ryerson University." />
 
 <head>
-  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/styles.css?version1">
+  <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/src/intro.css">
+  <link rel="stylesheet" type="text/css" href="styles/src/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="styles/src/experience.css">
+  <link rel="stylesheet" type="text/css" href="styles/src/contact.css">
+  <link rel="stylesheet" type="text/css" href="styles/src/projects.css">
+  <link rel="stylesheet" type="text/css" href="styles/src/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/lib/fontawesome/css/fontawesome-all.min.css">
   <script src="scripts/lib/jquery-3.3.1.min.js"></script>
   <script src="scripts/lib/bootstrap.min.js"></script>
   <title>Adam Adair</title>
 </head>
 
 <body>
-
-  <!-- Top navigation -->
-  <nav class="navbar fixed-top">
-    <span id="nav-dropdown" onclick="toggleSideNav()">&#9776;</span>
-    <h1>Adam Adair</h1>
-  </nav>
-
   <!-- Side navigation -->
-  <div class="sidenav" onmouseleave="closeSideNav()">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#experience-anchor">Experience</a></li>
-      <li><a href="#projects-anchor">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-
-  <!-- Introduction -->
-  <div class="intro">
-    <div class="intro-img">
+  <div class="sidebar">
+    <div class="sidebar-intro">
       <img id="me" src="./img/me.jpg" alt="Picture of me" />
-      <a href="mailto:adam.james.adair@gmail.com?Subject=From%20Portfoilo" target="_top"><img id="mail" class="icon" src="./img/mail.svg" alt="email icon"/></a>
-      <a target="_blank" href="https://github.com/adamjamesadair"><img id="github" class="icon" src="./img/github.svg" alt="github icon"/></a>
-      <a target="_blank" href="https://www.linkedin.com/in/adam-adair-431749131/"><img id="linkedin" class="icon" src="./img/linkedin.svg" alt="linekdin icon"/></a>
+      <h1>Adam Adair</h1>
+      <p>Fourth year computer science student</p>
     </div>
-
+    <div class="contact-info">
+      <a class="icon" href="mailto:adam.james.adair@gmail.com?Subject=From%20Portfoilo" target="_top"><i class="fas fa-envelope-square"></i></a>
+      <a class="icon" target="_blank" href="https://github.com/adamjamesadair"><i class="fab fa-github"></i></a>
+      <a class="icon" target="_blank" href="https://www.linkedin.com/in/adam-adair-431749131/"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="navigation">
+      <ul>
+        <li class="nav-link active" id="nav-home"><a href="#home">Home</a></li>
+        <li class="nav-link" id="nav-experience"><a href="#experience">Experience</a></li>
+        <li class="nav-link" id="nav-projects"><a href="#projects">Projects</a></li>
+        <li class="nav-link" id="nav-contact"><a href="#contact">Contact Me</a></li>
+      </ul>
+    </div>
+    <div class=sidebar-footer>
+      <span><p class="copyright"><small>&copy; 2017-2018 Adam Adair</small></p></span>
+    </div>
+  </div>
+  <!-- Introduction -->
+  <div id='home' class="intro">
     <h1>Hi, I'm Adam!</h1>
     <p>I'm a fourth year computer science student at Ryerson University.</p>
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="intro-experience" class="intro-nav" data-href="#experience">
+          <h3>Experience</h3>
+          <img id="honda-intro" class="intro-logo" src="img/HRI.png" alt="Honda Logo" />
+          <img id="cibc-intro" class="intro-logo" src="img/cibc.svg" alt="CIBC Logo" />
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div id="intro-projects" class="intro-nav" data-href="#projects">
+          <h3>Projects</h3>
+          <img class="intro-logo" src="img/icon.svg" alt="Tab manager icon" />
+          <img class="intro-logo" src="img/sudoku-generator/sudoku-logo.png" alt="Sudoku Generator icon" />
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div id="intro-contact" class="intro-nav" data-href="#contact">
+          <h3>Contact Me</h3>
+          <a target="_top" href="mailto:adam.james.adair@gmail.com?Subject=From%20Portfoilo"><i class="fas fa-envelope-square"></i></a>
+          <a target="_blank" href="https://github.com/adamjamesadair"><i class="fab fa-github"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/adam-adair-431749131/"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Mid section -->
   <div id="experience" class="experience">
-    <a id="experience-anchor" class="link-anchor"></a>
     <h1>Work Experience</h1>
     <hr/>
     <div class="row">
-      <div class="col-lg-6 box">
+      <div class="col-xl-6 box">
         <div class="container">
-          <a href="http://www.jp.honda-ri.com/english/" target="_blank"><img id="honda" class="logo" src="img/Honda.svg" alt="Honda Logo"/></a>
+          <a href="http://www.jp.honda-ri.com/english/" target="_blank"><img id="honda" class="logo" src="img/HRI.png" alt="Honda Logo"/></a>
           <h1>Honda Research Institute Japan</h1>
           <p id="date">September 2017- September 2018</p>
           <hr/>
@@ -70,7 +99,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 box">
+      <div class="col-xl-6 box">
         <div class="container">
           <a href="https://www.cibc.com/en/about-cibc.html" target="_blank"><img id="cibc" class="logo" src="img/cibc.svg" alt="CIBC Logo"/></a>
           <h1>Canadian Imperial Bank of Commerce</h1>
@@ -94,12 +123,11 @@
     </div>
   </div>
   <!-- Projects -->
-  <div class="projects">
-    <a id="projects-anchor" class="projects-anchor"></a>
+  <div id='projects' class="projects">
     <h1>Projects</h1>
     <hr/>
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-xl-6">
         <div class="container">
           <div class="tab-manager">
             <img id="tab-manager-icon" class="tab-manager-icon project-icon" src="img/icon.svg" alt="Tab manager icon" />
@@ -138,10 +166,10 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-xl-6">
         <div class="container">
           <div class="sudoku-generator">
-            <img id="sudoku-generator-icon" class="sudoku-generator-icon project-icon" src="img/sudoku-generator/sudoku-logo.png" alt="Sudoku Generator icon" />
+            <img class="project-icon" src="img/sudoku-generator/sudoku-logo.png" alt="Sudoku Generator icon" />
             <h3>React Sudoku Generator</h3>
             <hr/>
             <div id="sudoku-generator-carousel" class="carousel slide project-img" data-ride="carousel">
@@ -177,18 +205,17 @@
         </div>
       </div>
     </div>
-
+  </div>
+  <div id="contact" class="contact">
+    <h1>Contact Me</h1>
+    <hr/>
+    <div class="contact-info">
+      <a class="icon" href="mailto:adam.james.adair@gmail.com?Subject=From%20Portfoilo" target="_top"><i class="fas fa-4x fa-envelope-square"></i></a>
+      <a class="icon" target="_blank" href="https://github.com/adamjamesadair"><i class="fab fa-4x fa-github"></i></a>
+      <a class="icon" target="_blank" href="https://www.linkedin.com/in/adam-adair-431749131/"><i class="fab fa-4x fa-linkedin"></i></a>
+    </div>
   </div>
 
-  <!-- Contact Info -->
-  <div id="contact" class="contact-info">
-    <a href="mailto:adam.james.adair@gmail.com?Subject=From%20Portfoilo" target="_top"><img id="mail" class="icon" src="./img/mail.svg"/></a>
-    <a target="_blank" href="https://github.com/adamjamesadair"><img id="github" class="icon" src="./img/github.svg"/></a>
-    <a target="_blank" href="https://www.linkedin.com/in/adam-adair-431749131/"><img id="linkedin" class="icon" src="./img/linkedin.svg"/></a>
-  </div>
-  <footer>
-    <span class="copyright"><p><small>&copy; 2017-2018 Adam Adair</small></p></span>
-  </footer>
 
 
   <script src="./scripts/script.js"></script>

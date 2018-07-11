@@ -1,0 +1,44 @@
+.projects {
+  position: relative;
+  margin-left: var(--sidebar-width);
+  background-color: var(--project-color);
+  text-align: center;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.projects h1 {
+  padding: 2rem 0 0.5rem 0;
+}
+
+.projects h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.projects p {
+  text-align: left;
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+.project-img {
+  margin: auto;
+  width: 80%;
+  max-width: 50rem;
+  border: 0.075rem solid black;
+  margin-bottom: 3rem;
+}
+
+.project-link {
+  position: absolute;
+  bottom: 8rem;
+}
+
+.description {
+  padding-bottom: 5rem;
+}
+
+.project-icon {
+  width: 30%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}

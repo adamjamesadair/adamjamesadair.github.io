@@ -1,0 +1,76 @@
+.intro {
+  background-color: var(--home-color);
+  /*#39ACD6;*/
+  padding: 13vh 2rem 5rem 2rem;
+  margin-left: var(--sidebar-width);
+  height: 100vh;
+  min-height: 37rem;
+  display: block;
+  text-align: center;
+}
+
+.intro h3 {
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+}
+
+#intro-experience h3 {
+  border-top: 3vh solid var(--experience-color);
+}
+
+#intro-experience:hover {
+  background: var(--experience-color);
+}
+
+#intro-projects h3 {
+  border-top: 3vh solid var(--project-color);
+}
+
+#intro-projects:hover {
+  background: var(--project-color);
+}
+
+#intro-contact h3 {
+  margin-bottom: 5vh;
+  border-top: 3vh solid var(--contact-color);
+}
+
+#intro-contact:hover {
+  background: var(--contact-color);
+}
+
+.intro-nav {
+  background-color: white;
+  margin-top: 7vh;
+  height: 50vh;
+  min-height: 20rem;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+
+.intro-nav a {
+  color: black;
+  opacity: 0.75;
+}
+
+.intro-nav a:hover {
+  color: white;
+  opacity: 1;
+}
+
+.intro-nav:hover {
+  cursor: pointer;
+  border: none;
+}
+
+.intro-logo {
+  display: block;
+  margin: auto;
+  margin-bottom: 7vh;
+  height: 20%;
+  max-width: 80%;
+}
+
+#cibc-intro {
+  border-radius: 20%;
+}

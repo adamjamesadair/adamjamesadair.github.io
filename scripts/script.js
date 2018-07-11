@@ -11,10 +11,10 @@ $(window).on("scroll", function(event) {
 });
 
 // Intro links
-$('.intro-nav').not(a).click(function(){
-  smoothScroll($($(this).data("href")));
+$('.intro-nav').click(function(e) {
+  if (!$(e.target).is('i'))
+    smoothScroll($($(this).data("href")));
 });
-
 
 // Smooth scrolling for links
 $('a[href*="#"]').not('[href*="carousel"]').click(function(event) {
@@ -27,7 +27,7 @@ $('a[href*="#"]').not('[href*="carousel"]').click(function(event) {
 });
 
 // Based on smooth scrolling by Chris Coyier
-function smoothScroll(target){
+function smoothScroll(target) {
   target = target.length ? target : $('[name=' + target.slice(1) + ']');
   if (target.length) {
     event.preventDefault();

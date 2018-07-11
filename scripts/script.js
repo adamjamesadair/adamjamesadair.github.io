@@ -13,21 +13,21 @@ $(window).on("scroll", function(event) {
 // Intro links
 $('.intro-nav').click(function(e) {
   if (!$(e.target).is('i'))
-    smoothScroll($($(this).data("href")));
+    smoothScroll($($(this).data("href")), e);
 });
 
 // Smooth scrolling for links
-$('a[href*="#"]').not('[href*="carousel"]').click(function(event) {
+$('a[href*="#"]').not('[href*="carousel"]').click(function(e) {
   if (
     location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
     location.hostname == this.hostname
   ) {
-    smoothScroll($(this.hash));
+    smoothScroll($(this.hash), e);
   }
 });
 
 // Based on smooth scrolling by Chris Coyier
-function smoothScroll(target) {
+function smoothScroll(target, event) {
   target = target.length ? target : $('[name=' + target.slice(1) + ']');
   if (target.length) {
     event.preventDefault();

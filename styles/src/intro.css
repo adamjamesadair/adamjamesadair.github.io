@@ -1,4 +1,3 @@
-
 .intro {
   background-color: var(--home-color);
   /*#39ACD6;*/
@@ -15,7 +14,7 @@
   padding-bottom: 2vh;
 }
 
-#intro-experience h3{
+#intro-experience h3 {
   border-top: 3vh solid var(--experience-color);
 }
 
@@ -23,15 +22,15 @@
   background: var(--experience-color);
 }
 
-#intro-projects h3{
+#intro-projects h3 {
   border-top: 3vh solid var(--project-color);
 }
 
-#intro-projects:hover{
+#intro-projects:hover {
   background: var(--project-color);
 }
 
-#intro-contact h3{
+#intro-contact h3 {
   margin-bottom: 5vh;
   border-top: 3vh solid var(--contact-color);
 }
@@ -49,11 +48,12 @@
   transition: 0.3s;
 }
 
-.intro-nav a{
+.intro-nav a {
   color: black;
   opacity: 0.75;
 }
-.intro-nav a:hover{
+
+.intro-nav a:hover {
   color: white;
   opacity: 1;
 }
@@ -66,13 +66,9 @@
 .intro-logo {
   display: block;
   margin: auto;
-  margin-bottom: 5vh;
-  height: 30%;
-  max-width: 80%;
-}
-
-#honda-intro {
+  margin-bottom: 7vh;
   height: 20%;
+  max-width: 80%;
 }
 
 #cibc-intro {

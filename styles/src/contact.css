@@ -1,0 +1,25 @@
+.contact-info {
+  margin-top: 1vh;
+}
+
+.contact {
+  text-align: center;
+  margin-left: var(--sidebar-width);
+  background-color: var(--contact-color);
+  padding: 2rem;
+  height: 100vh;
+}
+
+.contact .contact-info {
+  padding-top: 20vh;
+}
+
+.contact a {
+  color: black;
+  opacity: 1;
+}
+
+.contact a:hover {
+  color: white;
+  opacity: 1;
+}

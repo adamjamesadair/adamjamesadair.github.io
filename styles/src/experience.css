@@ -1,0 +1,69 @@
+
+.experience {
+  position: relative;
+  margin-left: var(--sidebar-width);
+  background-color: var(--experience-color);
+  /*#4EBF66;*/
+  text-align: center;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.experience h1 {
+  padding: 2rem 0 0.5rem 0;
+}
+
+.box {
+  padding: 0 2.5rem 0 2.5rem;
+}
+
+#cibc {
+  width: 8rem;
+  border-radius: 20%;
+}
+
+#honda {
+  width: 15rem;
+  background-color: white;
+  height: auto;
+}
+
+#date {
+  margin-top: 1rem;
+}
+
+.logo {
+  background-color: tomato;
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center;
+  display: block;
+}
+
+.job-info {
+  text-align: left;
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+.skill-container {
+  margin-top: 4rem;
+}
+
+.skill {
+  color: white;
+  border: 0.2rem solid black;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  text-transform: uppercase;
+  margin: 0.25rem 0.25rem;
+}
+
+.tool {
+  background-color: #4281A4;
+}
+
+.activity {
+  background-color: #8166CC;
+}

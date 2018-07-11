@@ -1,0 +1,119 @@
+:root {
+  font-size: 16px;
+  --sidebar-width: 15rem;
+  --experience-color: #61C9A8;
+  --project-color: tomato;
+  --contact-color: #39ACD6;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+.fas, .fab {
+  font-size: 3rem;
+}
+
+.icon {
+  display: inline-block;
+  color: silver;
+  padding: 0 5%;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.carousel-indicators {
+  margin: auto;
+  padding: 0.5rem;
+  width: 150px;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.carousel-indicators:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+hr {
+  padding-bottom: 2rem;
+}
+
+.container {
+  background-color: white;
+  width: auto;
+  min-width: 377px;
+  height: 90%;
+  border: 0.1rem solid black;
+  padding-bottom: 8rem;
+  box-shadow: 0 1rem 1.5rem 0 rgba(0, 0, 0, 0.3), 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.20);
+}
+
+.container h1 {
+  margin-bottom: 8rem;
+  height: 2rem;
+}
+
+.container hr {
+  width: 75%;
+}
+
+img {
+  max-height: 100%;
+  width: auto;
+}
+
+.row {
+  margin: auto;
+  max-width: 75rem;
+}
+
+@media only screen and (max-height: 500px) {
+  .intro {
+    padding: 7rem 2rem 5rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 850px), only screen and (max-height: 700px) {
+  .sidebar {
+    visibility: hidden;
+  }
+  .intro, .experience, .projects, .contact {
+    margin-left: 0;
+  }
+  .container {
+    min-width: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  :root {
+    font-size: 10px;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+  .job-info {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+  .hotair {
+    display: none;
+  }
+}
+
+}

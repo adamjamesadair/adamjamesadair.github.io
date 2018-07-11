@@ -1,3 +1,4 @@
+// Sidebar navigation
 var navElements = [$('#nav-home'), $('#nav-experience'), $('#nav-projects'), $('#nav-contact')];
 $(window).on("scroll", function(event) {
   var scrollPos = window.pageYOffset;
@@ -9,28 +10,38 @@ $(window).on("scroll", function(event) {
   });
 });
 
-// Smooth scrolling by Chris Coyier
-$('a[href*="#"]').click(function(event) {
+// Intro links
+$('.intro-nav').not(a).click(function(){
+  smoothScroll($($(this).data("href")));
+});
+
+
+// Smooth scrolling for links
+$('a[href*="#"]').not('[href*="carousel"]').click(function(event) {
   if (
     location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
     location.hostname == this.hostname
   ) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    if (target.length) {
-      event.preventDefault();
-      $('html').animate({
-        scrollTop: target.offset().top
-      }, 1000, function() {
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) {
-          return false;
-        } else {
-          $target.attr('tabindex', '-1');
-          $target.focus();
-        };
-      });
-    }
+    smoothScroll($(this.hash));
   }
 });
+
+// Based on smooth scrolling by Chris Coyier
+function smoothScroll(target){
+  target = target.length ? target : $('[name=' + target.slice(1) + ']');
+  if (target.length) {
+    event.preventDefault();
+    $('html').animate({
+      scrollTop: target.offset().top
+    }, 1000, function() {
+      var $target = $(target);
+      $target.focus();
+      if ($target.is(":focus")) {
+        return false;
+      } else {
+        $target.attr('tabindex', '-1');
+        $target.focus();
+      };
+    });
+  }
+}

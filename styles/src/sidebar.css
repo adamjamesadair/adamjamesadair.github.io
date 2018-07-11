@@ -67,11 +67,11 @@ li.active a {
 }
 
 #nav-home {
-  border-left: 0.75rem solid white;
+  border-left: 0.75rem solid var(--home-color);
 }
 
 #nav-home:hover, #nav-home.active {
-  background: white;
+  background: var(--home-color);
 }
 
 #nav-experience {

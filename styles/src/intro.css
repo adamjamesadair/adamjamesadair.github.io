@@ -1,6 +1,6 @@
 
 .intro {
-  background-color: white;
+  background-color: var(--home-color);
   /*#39ACD6;*/
   padding: 13vh 2rem 5rem 2rem;
   margin-left: var(--sidebar-width);
@@ -40,6 +40,15 @@
   background: var(--contact-color);
 }
 
+.intro-nav {
+  background-color: white;
+  margin-top: 7vh;
+  height: 50vh;
+  min-height: 20rem;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+
 .intro-nav a{
   color: black;
   opacity: 0.75;
@@ -47,14 +56,6 @@
 .intro-nav a:hover{
   color: white;
   opacity: 1;
-}
-
-.intro-nav {
-  margin-top: 7vh;
-  height: 50vh;
-  min-height: 20rem;
-  border: 1px solid black;
-  transition: 0.3s;
 }
 
 .intro-nav:hover {

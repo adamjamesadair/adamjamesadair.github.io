@@ -102,9 +102,15 @@ img {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   :root {
     font-size: 10px;
+  }
+  .intro {
+    font-size: 16px;
+  }
+  .intro h1 {
+    font-size: 3rem;
   }
   .container h1 {
     font-size: 2rem;
@@ -112,8 +118,17 @@ img {
   .job-info {
     margin: 1rem 1rem 1rem 1rem;
   }
-  .hotair {
-    display: none;
+  .intro-nav {
+    height: 35vh;
+  }
+  .intro-logo {
+    margin-bottom: 5vh;
+  }
+  .intro-nav h3 {
+    font-size: 1.25rem;
+  }
+  #intro-contact h3 {
+    margin-bottom: 2vh;
   }
 }
 

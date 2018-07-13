@@ -31,7 +31,7 @@ function smoothScroll(target, event) {
   target = target.length ? target : $('[name=' + target.slice(1) + ']');
   if (target.length) {
     event.preventDefault();
-    $('html').animate({
+    $('html, body').animate({
       scrollTop: target.offset().top
     }, 1000, function() {
       var $target = $(target);

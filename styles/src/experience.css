@@ -27,6 +27,12 @@
   height: auto;
 }
 
+#ryerson {
+  width: 18rem;
+  background-color: white;
+  height: auto;
+}
+
 #date {
   margin-top: 1rem;
 }

@@ -63,7 +63,7 @@
   border: none;
 }
 
-.intro-logo {
+.intro-logo, .intro-experience-logo {
   display: block;
   margin: auto;
   margin-bottom: 2vh;
@@ -73,4 +73,18 @@
 
 #cibc-intro {
   border-radius: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-experience-logo {
+    width: 7rem;
+    margin: auto;
+    padding-bottom: 1rem;
+    height: auto;
+  }
+
+  #cibc-intro {
+    width: 4rem;
+    padding: 0;
+  }
 }

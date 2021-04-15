@@ -70,6 +70,10 @@ body {
   opacity: 1;
 }
 
+.carousel{
+  margin-top: 20px; 
+}
+
 .carousel-control-next-icon, .carousel-control-prev-icon {
   background-color: black;
   border-radius: 50%;
@@ -91,25 +95,6 @@ body {
 
 hr {
   padding-bottom: 2rem;
-}
-
-.container {
-  background-color: white;
-  width: auto;
-  min-width: 377px;
-  height: 90%;
-  border: 0.1rem solid black;
-  padding-bottom: 8rem;
-  box-shadow: 0 1rem 1.5rem 0 rgba(0, 0, 0, 0.3), 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.20);
-}
-
-.container h1 {
-  margin-bottom: 8rem;
-  height: 2rem;
-}
-
-.container hr {
-  width: 75%;
 }
 
 img {

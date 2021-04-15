@@ -1,3 +1,9 @@
+.intro-projects-logo{
+  width: 75%;
+  height: auto;
+  max-height: 100%;
+}
+
 .icon-container{
   vertical-align: top;
   display: inline-block;

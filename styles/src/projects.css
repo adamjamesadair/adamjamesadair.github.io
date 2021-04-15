@@ -30,6 +30,7 @@
 
 .projects h1 {
   padding: 2rem 0 0.5rem 0;
+  color: black;
 }
 
 .projects h2 {
@@ -43,11 +44,6 @@
   max-width: 50rem;
   border: 0.075rem solid black;
   margin-bottom: 3rem;
-}
-
-.project-link {
-  position: absolute;
-  bottom: 8rem;
 }
 
 .project-icon {

@@ -1,3 +1,25 @@
+.icon-container{
+  vertical-align: top;
+  display: inline-block;
+  width: 39%;
+}
+
+.carousel-container{
+  display: inline-block;
+  width: 60%;
+}
+
+.demo {
+  display: block;
+  width: 50%;
+  margin: 50px auto;
+}
+
+.description{
+  width: 90%;
+  margin: auto;
+}
+
 .projects {
   position: relative;
   margin-left: var(--sidebar-width);
@@ -15,11 +37,6 @@
   padding-bottom: 2rem;
 }
 
-.projects p {
-  text-align: left;
-  margin: 1rem 2rem 1rem 2rem;
-}
-
 .project-img {
   margin: auto;
   width: 80%;
@@ -33,12 +50,8 @@
   bottom: 8rem;
 }
 
-.description {
-  padding-bottom: 5rem;
-}
-
 .project-icon {
-  width: 30%;
+  width: 40%;
   margin-top: 4rem;
   margin-bottom: 2rem;
 }

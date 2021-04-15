@@ -1,10 +1,10 @@
 :root {
   font-size: 16px;
   --sidebar-width: 15rem;
-  --home-color: #b7e8ff;
-  --experience-color: #61C9A8;
-  --project-color: tomato;
-  --contact-color: #39ACD6;
+  --home-color: #188fa7;
+  --experience-color: #329f5b;
+  --project-color: #6A4C93;
+  --contact-color: #FF595E;
 }
 
 body {
@@ -16,6 +16,44 @@ body {
 
 .fas, .fab {
   font-size: 3rem;
+}
+
+.card {
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 10px;
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-head {
+  display: inline-block;
+  width: 29%;
+  text-align: center;
+  border-right: 1px solid grey;
+}
+
+.card-details {
+  text-align: left;
+  vertical-align: top;
+  padding-left: 10px;
+  display: inline-block;
+  width: 70%;
+}
+.card-head-project {
+  display: inline-block;
+  text-align: center;
+}
+
+.card-details-project {
+  text-align: left;
+  vertical-align: top;
+  padding-left: 10px;
+  display: inline-block;
+  width: 100%;
 }
 
 .icon {

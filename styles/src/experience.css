@@ -1,11 +1,8 @@
-
 .experience {
   position: relative;
   margin-left: var(--sidebar-width);
   background-color: var(--experience-color);
-  /*#4EBF66;*/
   text-align: center;
-  padding: 0 2rem 2rem 2rem;
 }
 
 .experience h1 {
@@ -40,7 +37,7 @@
 .logo {
   background-color: tomato;
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 2rem;
   text-align: center;
   display: block;
 }
@@ -51,7 +48,7 @@
 }
 
 .skill-container {
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 .skill {
@@ -70,6 +67,6 @@
   background-color: #4281A4;
 }
 
-.activity {
+.purple {
   background-color: #8166CC;
 }

@@ -35,7 +35,7 @@
     <div class="sidebar-intro">
       <img id="me" src="./img/me.jpg" alt="Picture of me" />
       <h1>Adam Adair</h1>
-      <p>Fourth year computer science student</p>
+      <p>Software Developer</p>
     </div>
     <div class="contact-info">
       <a class="icon" href="mailto:adam.james.adair@gmail.com?Subject=From%20Portfoilo" target="_top"><i class="fas fa-envelope-square"></i></a>
@@ -51,13 +51,13 @@
       </ul>
     </div>
     <div class=sidebar-footer>
-      <span><p class="copyright"><small>&copy; 2017-2019 Adam Adair</small></p></span>
+      <span><p class="copyright"><small>&copy; 2017-2021 Adam Adair</small></p></span>
     </div>
   </div>
   <!-- Introduction -->
   <div id='home' class="intro">
     <h1>Hi, I'm Adam!</h1>
-    <p>I'm a fourth year computer science student at Ryerson University.</p>
+    <p>I'm a Software Developer.</p>
     <div class="row">
       <div class="col-4">
         <div id="intro-experience" class="intro-nav" data-href="#experience">
@@ -85,161 +85,165 @@
     </div>
   </div>
 
-  <!-- Mid section -->
-  <div id="experience" class="experience">
+  <!-- Work Experience -->
+  <section id="experience" class="experience">
     <h1>Work Experience</h1>
     <hr/>
-    <div class="row">
-      <div class="col-xl-6 box">
-        <div class="container">
-          <a href="https://www.ryerson.ca/" target="_blank"><img id="ryerson" class="logo" src="img/ryerson.jpeg" alt="Ryerson Logo"/></a>
-          <h1>Ryerson University</h1>
-          <p id="date">September 2018 - January 2019</p>
-          <hr/>
-          <div class="job-info">
-            <p><b>Position: </b>Research Assistant.</p>
-            <p><b>Description: </b> Working in the inclusive media department to design, develop and test a research project called WebMoti, a robot intended to help children with autism enhance social, communication and interpersonal skills, while gaining self-esteem and managing their sensory environment.</p>
-            <div class="skill-container">
-              <b>Skills: </b>
-              <span class="skill tool">Python</span>
-              <span class="skill tool">C++</span>
-              <span class="skill activity">Arduino</span>
-              <span class="skill activity">Raspberry Pi</span>
-            </div>
-          </div>
-        </div>
+    <!-- Ryerson -->
+    <div class="card">
+      <div class="card-head">
+        <a href="https://www.ryerson.ca/" target="_blank"><img id="ryerson" class="logo" src="img/ryerson.jpeg" alt="Ryerson Logo"/></a>
+        <p id="date"><b>Research Assistant</b><br/>September 2018 - January 2019</p>
       </div>
-      <div class="col-xl-6 box">
-        <div class="container">
-          <a href="http://www.jp.honda-ri.com/english/" target="_blank"><img id="honda" class="logo" src="img/HRI.png" alt="Honda Logo"/></a>
-          <h1>Honda Research Institute Japan</h1>
-          <p id="date">September 2017- September 2018</p>
-          <hr/>
-          <div class="job-info">
-            <p><b>Position: </b>Vision Labs Research Co-op.</p>
-            <p><b>Description: </b> Responsible for the development of computer programs for experiments, data analysis and visualization, as well as designing, performing and summarizing experiments on human subjects to test hypotheses. Tasks including
-              writing documents and reports on developed programs and obtained experimental results were also performed.</p>
-            <div class="skill-container">
-              <b>Skills: </b>
-              <span class="skill tool">Python</span>
-              <span class="skill tool">R</span>
-              <span class="skill tool">Git</span>
-              <span class="skill activity">Data Analysis</span>
-              <span class="skill activity">experiments</span>
-              <span class="skill activity">Eyelink 2000</span>
-            </div>
-          </div>
-        </div>
+      <div class="card-details">
+        <p>Working in the inclusive media department to design, develop and test a research project called WebMoti, a robot intended to help children with autism enhance social, communication and interpersonal skills, while gaining self-esteem and managing their sensory environment.</p>
+        <span class="badge badge-pill badge-info purple">Python</span>
+        <span class="badge badge-pill badge-info purple">C++</span>
+        <span class="badge badge-pill badge-info">Arduino</span>
+        <span class="badge badge-pill badge-info">Raspberry Pi</span>
       </div>
     </div>
-    <div class="row">
-      <div class="col-xl-6 box">
-        <div class="container">
-          <a href="https://www.cibc.com/en/about-cibc.html" target="_blank"><img id="cibc" class="logo" src="img/cibc.svg" alt="CIBC Logo"/></a>
-          <h1>Canadian Imperial Bank of Commerce</h1>
-          <p id="date">Summer 2016</p>
-          <hr/>
-          <div class="job-info">
-            <p><b>Position: </b>Enterprise User Desktop Test Environments.</p>
-            <p><b>Description: </b>Provided operational support and maintenance of the Enterprise User Desktop Test Environments of over 700 endpoints for large complex projects supporting various CIBC lines of business. Major activities include; building,
+    <!-- HRI -->
+    <div class="card">
+      <div class="card-head">
+        <a href="http://www.jp.honda-ri.com/english/" target="_blank"><img id="honda" class="logo" src="img/HRI.png" alt="Honda Logo"/></a>
+        
+        <p id="date"><b>Vision Labs Research Co-op</b><br>September 2017- September 2018</p>
+      </div>
+      <div class="card-details">
+        <p>Responsible for the development of computer programs for experiments, data analysis and visualization, as well as designing, performing and summarizing experiments on human subjects to test hypotheses. Tasks including
+          writing documents and reports on developed programs and obtained experimental results were also performed.</p>
+        <span class="badge badge-pill badge-info purple">Python</span>
+        <span class="badge badge-pill badge-info purple">R</span>
+        <span class="badge badge-pill badge-info purple">Git</span>
+        <span class="badge badge-pill badge-info">Data Analysis</span>
+        <span class="badge badge-pill badge-info">Experiments</span>
+        <span class="badge badge-pill badge-info">Eye Link 2000</span>
+        </div>
+    </div>
+    <!-- CIBC -->
+    <div class="card">
+      <div class="card-head">
+        <a href="https://www.cibc.com/en/about-cibc.html" target="_blank"><img id="cibc" class="logo" src="img/cibc.svg" alt="CIBC Logo"/></a>
+          <p id="date"><b>Enterprise User Desktop Test Environments</b><br/>Summer 2016</p>
+      </div>
+      <div class="card-details">
+        <p>Provided operational support and maintenance of the Enterprise User Desktop Test Environments of over 700 endpoints for large complex projects supporting various CIBC lines of business. Major activities include; building,
               supporting and administering Windows servers and workstations as well as troubleshooting technical and operational issues.</p>
-            <div class="skill-container">
-              <b>Skills: </b>
-              <span class="skill tool">Windows Server</span>
-              <span class="skill tool">TCP/IP</span>
-              <span class="skill tool">Windows OS</span>
-              <span class="skill activity">Technical troubleshooting</span>
-              <span class="skill activity">Help desk</span>
-            </div>
-          </div>
+        <span class="badge badge-pill badge-info purple">Windows Server</span>
+        <span class="badge badge-pill badge-info purple">TCP/IP</span>
+        <span class="badge badge-pill badge-info purple">Windows OS</span>
+        <span class="badge badge-pill badge-info">Technical Troubleshooting</span>
+        <span class="badge badge-pill badge-info">Help Desk</span>
         </div>
-      </div>
     </div>
-  </div>
+  </section>
+
   <!-- Projects -->
-  <div id='projects' class="projects">
+  <section id="projects" class="projects">
     <h1>Projects</h1>
     <hr/>
-    <div class="row">
-      <div class="col-xl-6">
-        <div class="container">
-          <div class="tab-manager">
-            <img id="tab-manager-icon" class="tab-manager-icon project-icon" src="img/icon.svg" alt="Tab manager icon" />
-            <h3>Manage My Tabs</h3>
-            <hr/>
-            <div id="tab-manager-carousel" class="carousel slide project-img" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#tab-manager-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#tab-manager-carousel" data-slide-to="1"></li>
-                <li data-target="#tab-manager-carousel" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="img/manage-my-tabs/manage-my-tabs-1.png" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/manage-my-tabs/manage-my-tabs-2.png" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/manage-my-tabs/manage-my-tabs-3.png" alt="Third slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#tab-manager-carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#tab-manager-carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+    <!-- Manage My Tabs -->
+    <div class="card">
+      <div class="card-head-project">
+        <div class="icon-container">
+          <img id="tab-manager-icon" class="tab-manager-icon project-icon" src="img/icon.svg" alt="Tab manager icon" />
+          <h3>Manage My Tabs</h3>
+          <p>Chrome and Firefox Extension</p>
+        </div>
+        <div class="carousel-container">
+          <div id="tab-manager-carousel" class="carousel slide project-img" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#tab-manager-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#tab-manager-carousel" data-slide-to="1"></li>
+            <li data-target="#tab-manager-carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/manage-my-tabs/manage-my-tabs-1.png" alt="First slide">
             </div>
-            <p><b>Type: </b>Chrome and Firefox Extension.</p>
-            <p class="description"><b>Description: </b>Manage My Tabs is an extension that gives the user a quick and simple way to manage their tabs. Tabs are grouped by website name and are shown in one convinent tab that the user may search and customize. From the manager
-              tab, the user can navigate to any tab, close tabs individually or by groups and view tabs from other windows.</p>
-            <p class="project-link"><b>Website: </b><a target="_blank" href="https://adamjamesadair.github.io/manage-my-tabs/">Manage My Tabs</a></p>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/manage-my-tabs/manage-my-tabs-2.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/manage-my-tabs/manage-my-tabs-3.png" alt="Third slide">
+            </div>
+            <a class="carousel-control-prev" href="#tab-manager-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#tab-manager-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="card-details-project">
+        <p class="description">Manage My Tabs is an extension that gives the user a quick and simple way to manage their tabs. Tabs are grouped by website name and are shown in one convinent tab that the user may search and customize. From the manager
+        tab, the user can navigate to any tab, close tabs individually or by groups and view tabs from other windows.</p>
+        <a class="btn btn-primary demo" target="_blank" href="https://adamjamesadair.github.io/manage-my-tabs/">Website</a>
+        <span class="badge badge-pill badge-success">HTML</span>
+        <span class="badge badge-pill badge-success">Javascript</span>
+        <span class="badge badge-pill badge-success">CSS</span>
+        <span class="badge badge-pill badge-success">Jquery</span>
+        <span class="badge badge-pill badge-success">Bootstrap</span>
+        <span class="badge badge-pill badge-success">JSON</span>
+        <span class="badge badge-pill badge-info">Chrome Extension</span>
+        <span class="badge badge-pill badge-info">Firefox Extension</span>
+      </div>
+    </div>  
+    <!-- Sudoku Generator -->
+    <div class="card">
+      <div class="card-head-project">
+        <div class="icon-container">
+          <img class="project-icon" src="img/sudoku-generator/sudoku-logo.png" alt="Sudoku Generator icon" />
+          <h3>Sudoku Generator</h3>
+          <p>React Application</p>
+        </div>
+        <div class="carousel-container">
+          <div id="sudoku-generator-carousel" class="carousel slide project-img" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#sudoku-generator-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#sudoku-generator-carousel" data-slide-to="1"></li>
+              <li data-target="#sudoku-generator-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/sudoku-generator/sudoku-generator-1.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/sudoku-generator/sudoku-generator-2.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/sudoku-generator/sudoku-generator-3.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#sudoku-generator-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#sudoku-generator-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
-      <div class="col-xl-6">
-        <div class="container">
-          <div class="sudoku-generator">
-            <img class="project-icon" src="img/sudoku-generator/sudoku-logo.png" alt="Sudoku Generator icon" />
-            <h3>React Sudoku Generator</h3>
-            <hr/>
-            <div id="sudoku-generator-carousel" class="carousel slide project-img" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#sudoku-generator-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#sudoku-generator-carousel" data-slide-to="1"></li>
-                <li data-target="#sudoku-generator-carousel" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="img/sudoku-generator/sudoku-generator-1.png" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/sudoku-generator/sudoku-generator-2.png" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/sudoku-generator/sudoku-generator-3.png" alt="Third slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#sudoku-generator-carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#sudoku-generator-carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-            <p><b>Type: </b>React Application.</p>
-            <p class="description"><b>Description: </b>A simple Sudoku generator implemented in React. Select the number of initial cells to be filled in and click 'Generate'. Every generated board has a solution. Click the validate button to check for conflicts.</p>
-            <p class="project-link"><b>Demo: </b><a target="_blank" href="https://react-sudoku-generator.firebaseapp.com">React Sudoku Generator</a></p>
-          </div>
-        </div>
+      <div class="card-details-project">
+        <p class="description">A Sudoku generator implemented in React. Select the number of initial cells to be filled in and click 'Generate'. Every generated board has a solution. Click the validate button to check for conflicts.</p>
+        <a class="btn btn-primary demo" target="_blank" href="https://react-sudoku-generator.firebaseapp.com">Live Demo</a>
+        <span class="badge badge-pill badge-success">React</span>
+        <span class="badge badge-pill badge-success">Javascript</span>
+        <span class="badge badge-pill badge-success">Bootstrap</span>
+        <span class="badge badge-pill badge-success">HTML</span>
+        <span class="badge badge-pill badge-success">CSS</span>
+        <span class="badge badge-pill badge-success">JSON</span>
+        <span class="badge badge-pill badge-info">Firebase</span>
       </div>
-    </div>
-  </div>
+  </section>
+  <!-- Contact Me -->
   <div id="contact" class="contact">
     <h1>Contact Me</h1>
     <hr/>

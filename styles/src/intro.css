@@ -38,6 +38,10 @@
   background: var(--contact-color);
 }
 
+#me-home {
+  display: none;
+}
+
 .intro-nav {
   background-color: white;
   margin-top: 7vh;

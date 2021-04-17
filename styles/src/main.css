@@ -12,6 +12,7 @@ body {
   font-family: Arial, serif;
   font-size: 1.25rem;
   font-weight: normal;
+  min-width: 375px;
 }
 
 .fas, .fab {
@@ -32,6 +33,7 @@ body {
 .card-head {
   display: inline-block;
   width: 29%;
+  min-width: 19rem;
   text-align: center;
   border-right: 1px solid grey;
 }
@@ -43,6 +45,11 @@ body {
   display: inline-block;
   width: 70%;
 }
+
+.card-details p {
+  margin-bottom: 25px;
+}
+
 .card-head-project {
   display: inline-block;
   text-align: center;
@@ -113,7 +120,34 @@ img {
   }
 }
 
-@media only screen and (max-width: 850px), only screen and (max-height: 700px) {
+@media only screen and (max-width: 850px), only screen and (max-height: 670px) {
+  #me-home {
+    display: block;
+    border-radius: 100%;
+    width: 50%;
+    max-width: 200px;
+    margin: 2rem auto;
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5), 0 1rem 1rem 0 rgba(0, 0, 0, 0.20);
+  }
+
+  .intro{
+    padding: 5px;
+    margin: none;
+    height: auto;
+  }
+
+  .intro .col-4 {
+    height: auto;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .intro h1 {
+    font-size: 32px;  
+  }
+
   .sidebar {
     visibility: hidden;
   }
@@ -125,18 +159,35 @@ img {
   }
 }
 
+@media only screen and (max-width: 1410px) {
+  .card-head {
+    border-right: none;
+    margin-bottom: 25px;
+    border-bottom: 1px solid grey;
+  }
+  .card-details{
+    width: 95%
+  }
+}
+
 @media only screen and (max-width: 600px) {
   :root {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  .carousel-indicators{
+    display: none;
+  }
+  .card-head-project {
+    width: 100%;
+  }
+  .project-icon{
+    width: 70%;
   }
   .intro {
     font-size: 16px;
   }
   .intro h1 {
     font-size: 3rem;
-  }
-  .container h1 {
-    font-size: 2rem;
   }
   .job-info {
     margin: 1rem 1rem 1rem 1rem;
@@ -153,6 +204,4 @@ img {
   #intro-contact h3 {
     margin-bottom: 2vh;
   }
-}
-
 }

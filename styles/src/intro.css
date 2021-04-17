@@ -46,7 +46,6 @@
   background-color: white;
   margin-top: 7vh;
   height: 50vh;
-  min-height: 20rem;
   border: 1px solid black;
   transition: 0.3s;
 }

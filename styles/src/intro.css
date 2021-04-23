@@ -1,5 +1,6 @@
 .intro {
   background-color: var(--home-color);
+  background: linear-gradient(90deg, rgba(48,76,147,1) 0%, rgba(24,143,167,1) 52%, rgba(48,76,147,1) 100%);
   padding: 13vh 2rem 5rem 2rem;
   margin-left: var(--sidebar-width);
   height: 100vh;
@@ -13,29 +14,35 @@
   padding-bottom: 2vh;
 }
 
-#intro-experience h3 {
+#intro-experience {
   border-top: 3vh solid var(--experience-color);
 }
 
 #intro-experience:hover {
   background: var(--experience-color);
+  background: linear-gradient(90deg, rgba(18,102,43,1) 0%, rgba(50,159,91,1) 52%, rgba(18,102,43,1) 100%);
+  border: none;
 }
 
-#intro-projects h3 {
+#intro-projects {
   border-top: 3vh solid var(--project-color);
 }
 
 #intro-projects:hover {
   background: var(--project-color);
+  background: linear-gradient(90deg, rgba(61,20,118,1) 0%, rgba(106,76,147,1) 50%, rgba(61,20,118,1) 100%);
+  border: none;
 }
 
-#intro-contact h3 {
+#intro-contact {
   margin-bottom: 5vh;
   border-top: 3vh solid var(--contact-color);
 }
 
 #intro-contact:hover {
   background: var(--contact-color);
+  background: linear-gradient(90deg, rgba(197,47,51,1) 0%, rgba(255,89,94,1) 50%, rgba(197,47,51,1) 100%);
+  border: none;
 }
 
 #me-home {

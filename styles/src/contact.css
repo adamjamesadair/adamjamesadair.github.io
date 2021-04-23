@@ -6,6 +6,7 @@
   text-align: center;
   margin-left: var(--sidebar-width);
   background-color: var(--contact-color);
+  background: linear-gradient(90deg, rgba(197,47,51,1) 0%, rgba(255,89,94,1) 50%, rgba(197,47,51,1) 100%); 
   padding: 2rem;
   height: 100vh;
 }

@@ -72,6 +72,7 @@ li.active a {
 
 #nav-home:hover, #nav-home.active {
   background: var(--home-color);
+  background: linear-gradient(90deg, rgba(25,46,98,1) 0%, rgba(24,143,167,1) 52%, rgba(25,46,98,1) 100%);
 }
 
 #nav-experience {
@@ -80,6 +81,7 @@ li.active a {
 
 #nav-experience:hover, #nav-experience.active {
   background: var(--experience-color);
+  background: linear-gradient(90deg, rgba(18,102,43,1) 0%, rgba(50,159,91,1) 52%, rgba(18,102,43,1) 100%); 
 }
 
 #nav-projects {
@@ -88,6 +90,7 @@ li.active a {
 
 #nav-projects:hover, #nav-projects.active {
   background: var(--project-color);
+  background: linear-gradient(90deg, rgba(61,20,118,1) 0%, rgba(106,76,147,1) 50%, rgba(61,20,118,1) 100%); 
 }
 
 #nav-contact {
@@ -96,6 +99,7 @@ li.active a {
 
 #nav-contact:hover, #nav-contact.active {
   background: var(--contact-color);
+  background: linear-gradient(90deg, rgba(197,47,51,1) 0%, rgba(255,89,94,1) 50%, rgba(197,47,51,1) 100%);
 }
 
 .copyright {

@@ -30,6 +30,7 @@
   position: relative;
   margin-left: var(--sidebar-width);
   background-color: var(--project-color);
+  background: linear-gradient(90deg, rgba(61,20,118,1) 0%, rgba(106,76,147,1) 50%, rgba(61,20,118,1) 100%); 
   text-align: center;
   padding: 0 2rem 2rem 2rem;
 }
